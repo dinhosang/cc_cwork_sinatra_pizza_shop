@@ -1,0 +1,35 @@
+<h2>All Pizzas</h2>
+
+<!-- the below is a loop -->
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Order</th>
+    <th>Actions</th>
+  </tr>
+
+  <% @pizzas.each do |pizza| %>
+  <tr>
+    <td> <%= pizza.pretty_name() %></td>
+    <td> <%=pizza.quantity%> x <%=pizza.topping%></td>
+    <!-- there is an = below so that we can inject the
+    result of the code as a string into the path
+    referenced -->
+    <td>
+
+    <form class="" action="/pizzas/<%= pizza.id %>" method="get">
+      <input type="submit" name="" value="Order details">
+    </form>
+
+    <form class="" action="/pizzas/<%= pizza.id %>/edit" method="get">
+      <input type="submit" name="" value="Modify Order">
+    </form>
+
+    <form class="" action="/pizzas/<%= pizza.id %>/delete" method="post">
+      <input type="submit" name="" value="Delete Order">
+    </form>
+    </td>
+  </tr>
+  <% end %>
+</table>
+<!-- loop has ended -->
