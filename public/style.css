@@ -3,8 +3,79 @@ body {
   background-color: rgb(230, 233, 65);
 }
 
+.modify {
+  width: 20%;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(224, 152, 44);
+  display: flex;
+  border: solid;
+}
+
+.modify form {
+  margin: auto;
+  padding: 0px;
+}
+
+.show {
+  margin: 20px auto;
+  width: 80%;
+  border: solid;
+}
+
+.show p {
+  border: dotted;
+  border-width: 1px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.create_or_edit_order {
+  border: solid;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.create_or_edit_order div {
+  width: 80%;
+  margin: auto;
+  padding: 5px 0px;
+}
+
+.line_in_order {
+  display: flex;
+}
+
+.line_in_order label {
+  width: 50%;
+  margin: auto;
+}
+.line_in_order select {
+  width: 50%;
+  margin: auto;
+}
+.line_in_order input {
+  width: 50%;
+  margin: auto;
+}
+
+.create_or_edit_order input[type="submit"] {
+  width: 50%;
+  margin-left: 25%;
+}
+
 table {
   border-collapse: collapse;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
 }
 
 tr {
@@ -22,7 +93,34 @@ td {
   border-width: thin;
 }
 
+.index table{
+  margin: auto;
+}
+
 nav {
   border: solid 5px ;
   background: rgba(230, 158, 36, 0.77);
+  margin: auto;
+  width: 60%;
+}
+
+#constant_nav ul{
+  display: flex;
+}
+
+#constant_nav li {
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 50%;
+}
+
+footer {
+  border: solid;
+  width: 60%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-style: italic;
+  font-size: 10px;
 }

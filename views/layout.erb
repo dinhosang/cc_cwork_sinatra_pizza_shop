@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng-GB">
 <head>
   <title>Pizza Shop</title>
   <link rel="stylesheet" href="/style.css">
@@ -8,11 +8,16 @@
 <body>
   <h1>CodeClan Pizza Shop</h1>
   <nav>
-    <ul>
-      <li> <a href="/pizzas">View All Orders</a> </li>
-      <li> <a href="/pizzas/new">Create an Order</a> </li>
-    </ul>
+    <div id="constant_nav">
+      <ul>
+        <li> <a href="/pizzas">View All Orders</a> </li>
+        <li> <a href="/pizzas/new">Create an Order</a> </li>
+      </ul>
+    </div>
   </nav>
+  <main>
   <%= yield %>
+  </main>
+  <footer>This site and all pizzas featured are property of CCPS Ltd</footer>
 </body>
 </html>

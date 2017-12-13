@@ -1,24 +1,24 @@
 <!-- class attribute would aid for styling in css -->
 <!-- method is type of html request we wish to send -->
 <!-- action is the path we wish to send the details to -->
-<form class="" action="/pizzas" method="POST">
+<form class="create_or_edit_order" action="/pizzas" method="POST">
   <!-- the use of for and id below allows us to
   explicitly connect the label and input field for
   aid in accessibility, for instance screen readers
   will be able to state the connection. It also
   allows you to click the label and in doing so
   activate the input field for use -->
-
+<div class="line_in_order">
   <label for="first-name-input">First name:</label>
   <input id="first-name-input" type="text" name="first_name" value="">
-
+</div>
   <br/>
-
+<div class="line_in_order">
   <label for="last-name-input">Last name:</label>
   <input id="last-name-input" type="text" name="last_name" value="">
-
+</div>
   <br/>
-
+<div class="line_in_order">
   <label for="topping-select">Topping:</label>
   <select class="" name="topping" id="topping-select">
     <!-- in the field we should get the below details
@@ -33,16 +33,16 @@
     <option disabled value="Ham">Ham</option>
     <option value="Mushroom">Mushrooom</option>
   </select>
-
+</div>
   <br/>
 
   <!-- the min below still lets them enter whatever they wish, but stops the up/down arrows to side of the field box from going below the min number -->
 
   <!-- but it doesn't stop people going into the dev tools of a browser and changing the minimum or maximum or whatever so still need to catch in the back end of the site, not just here on the front -->
-
+<div class="line_in_order">
   <label for="quantity-input">Quantity:</label>
   <input id="quantity-input" type="number" min="1" max="100" name="quantity" value="">
-
+</div>
   <br/>
 
   <!-- creates a button for submitting -->
