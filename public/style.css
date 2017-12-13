@@ -1,3 +1,8 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(230, 233, 65);
+}
+
 table {
   border-collapse: collapse;
 }
@@ -15,4 +20,9 @@ td {
   border-right: dotted;
   border-left: dotted;
   border-width: thin;
+}
+
+nav {
+  border: solid 5px ;
+  background: rgba(230, 158, 36, 0.77);
 }
