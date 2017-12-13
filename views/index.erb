@@ -11,7 +11,7 @@
   <% @pizzas.each do |pizza| %>
   <tr>
     <td> <%= pizza.pretty_name() %></td>
-    <td> <%=pizza.quantity%> x <%=pizza.topping%></td>
+    <td class="mid"> <%=pizza.quantity%> x <%=pizza.topping%></td>
     <!-- there is an = below so that we can inject the
     result of the code as a string into the path
     referenced -->

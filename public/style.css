@@ -6,3 +6,13 @@ tr {
   border-bottom: solid;
   border-color: rgb(49, 69, 57)
 }
+
+td {
+  padding: 5px;
+}
+
+.mid {
+  border-right: dotted;
+  border-left: dotted;
+  border-width: thin;
+}
